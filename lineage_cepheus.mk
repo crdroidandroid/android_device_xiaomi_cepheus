@@ -21,18 +21,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cepheus device
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Inherit some common Spark OS stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+# Inherit some common crDroid stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Spark specific flags
+# crDroid specific flags
+TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier
-PRODUCT_NAME := spark_cepheus
+PRODUCT_NAME := lineage_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9
