@@ -356,6 +356,12 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
+	
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay/frameworks/base/packages/overlays/NoCutoutOverlay
+
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
 
 # Perf
 PRODUCT_PACKAGES += \
