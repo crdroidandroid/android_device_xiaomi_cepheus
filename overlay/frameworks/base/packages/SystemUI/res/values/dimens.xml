@@ -21,4 +21,7 @@
 
     <!-- Recognizing fingerprint animation -->
     <dimen name="udfps_animation_offset">4dp</dimen>
+	
+    <!-- Burn-in protection -->
+    <dimen name="burnin_protection_horizontal_shift">1dp</dimen>
 </resources>
