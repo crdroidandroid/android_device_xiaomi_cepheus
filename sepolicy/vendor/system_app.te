@@ -1,4 +1,5 @@
 r_dir_file(system_app, sysfs_zram)
+get_prop(system_app, qemu_hw_prop)
 
 # Allow system_app to write graphics nodes
 allow system_app vendor_sysfs_graphics:file rw_file_perms;
