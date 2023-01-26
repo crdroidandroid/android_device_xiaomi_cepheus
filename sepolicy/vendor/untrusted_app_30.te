@@ -1,0 +1,1 @@
+allow untrusted_app_30 sysfs_msm_subsys:dir { search };
