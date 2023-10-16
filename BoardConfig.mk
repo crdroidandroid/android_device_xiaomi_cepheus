@@ -114,7 +114,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := cepheus_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/cepheus
 KERNEL_SUPPORTS_LLVM_TOOLS := true
-TARGET_KERNEL_CLANG_VERSION := r487747c
+TARGET_KERNEL_CLANG_VERSION := r498229b
 TARGET_KERNEL_ADDITIONAL_FLAGS := AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip LD=ld.lld
 TARGET_KERNEL_ADDITIONAL_FLAGS += \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
