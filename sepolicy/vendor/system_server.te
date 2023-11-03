@@ -3,5 +3,3 @@ get_prop(system_server, vendor_camera_prop)
 
 allow system_server vendor_proc_shs:dir search;
 
-#smart charger
-allow system_server sysfs_battery_supply:file rw_file_perms;
