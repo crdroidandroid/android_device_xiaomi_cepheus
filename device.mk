@@ -424,6 +424,10 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-lite-vendorcompat \
+    libprotobuf-cpp-full-vendorcompat
+
 # Screen density
 TARGET_SCREEN_DENSITY := 440
 
