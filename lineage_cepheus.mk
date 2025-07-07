@@ -40,6 +40,9 @@ TARGET_BOARD_PLATFORM := msmnile
 # Keys
 -include vendor/lineage-priv/keys/keys.mk
 
+# Exclude QCOM powerhal manifest
+TARGET_PROVIDES_POWERHAL := true
+
 # Device identifier
 PRODUCT_NAME := lineage_cepheus
 PRODUCT_DEVICE := cepheus
