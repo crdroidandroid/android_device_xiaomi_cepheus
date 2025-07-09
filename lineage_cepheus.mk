@@ -21,17 +21,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cepheus device
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common RisingOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# PixelOS flags
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-
-# Boot animation
+# RisingOS FLAGS
+WITH_GMS := true
+TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_HAS_UDFPS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+RISING_MAINTAINER= tribual 丨 家
+PRODUCT_USES_QCOM_HARDWARE := true
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := msmnile
+
+# Keys
+-include vendor/lineage-priv/keys/keys.mk
 
 # Device identifier
-PRODUCT_NAME := aosp_cepheus
+PRODUCT_NAME := lineage_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9
@@ -40,3 +50,9 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # Recovery
 TARGET_USES_AOSP_RECOVERY := true
+
+BUILD_FINGERPRINT := Xiaomi/cepheus/cepheus:11/RKQ1.200826.002/V12.5.6.0.RFACNXM:user/release-keys
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Qualcomm Snapdragon 855" \
+    RisingMaintainer="tribual 丨 家"
