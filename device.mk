@@ -335,7 +335,7 @@ PRODUCT_PACKAGES += \
 # MiuiCamera
 $(call soong_config_set,camera,package_name,com.android.camera)
 $(call soong_config_set,camera,override_format_from_reserved,true)
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera-cepheus/config.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 # Network
 PRODUCT_PACKAGES += \
