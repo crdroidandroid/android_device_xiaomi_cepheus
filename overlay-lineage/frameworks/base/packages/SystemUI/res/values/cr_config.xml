@@ -23,9 +23,6 @@
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
     <integer name="config_screenRecorderMaxFramerate">60</integer>
 
-    <!-- Color of the UDFPS pressed view -->
-    <color name="config_udfpsColor">#00ffffff</color>
-
     <!-- Udfps vendor code -->
     <integer name="config_udfpsVendorCode">22</integer>
 
